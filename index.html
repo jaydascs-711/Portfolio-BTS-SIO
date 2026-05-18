@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Grace Lombo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="network-bg"></div>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#accueil" class="nav-link active">Profil</a></li>
+            <li><a href="#propos" class="nav-link">À propos</a></li>
+            <li><a href="#formations" class="nav-link">Formations</a></li>
+            <li><a href="#experiences" class="nav-link">Expériences Professionnelles</a></li>
+            <li><a href="#projets" class="nav-link">Projets</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#veille" class="nav-link">Veille Technologique</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="accueil" class="hero section">
+        <div class="hero-center">
+            <h1>Grace LOMBO</h1>
+            <h2>Étudiante en BTS SIO option SISR</h2>
+            <p>Spécialisée en Infrastructures, Systèmes et Réseaux au Lycée Parc de Vilgénis.</p>
+            <div class="hero-btns">
+                <a href="CV_LOMBO.pdf" class="btn btn-primary">Télécharger CV</a>
+                <a href="#contact" class="btn btn-secondary">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="propos" class="content-section section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Étudiante en <strong>BTS SIO option SISR</strong>, je me spécialise dans l'administration des systèmes et la sécurisation des infrastructures numériques.</p>
+                    <p>Intéressé par l'informatique depuis mon parcours général, j'ai développé une rigueur technique et une capacité d'analyse qui me permettent de progressé.</p>
+                    <p>Mon dynamisme et mes expériences associatives renforcent mon sens du service et ma faculté à travailler en équipe pour mener à bien des projets technologiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formations" class="content-section section grey-bg">
+        <div class="container">
+            <h2 class="section-title">Mes Formations</h2>
+            <div class="parcours-grid">
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2022 - 2025</span>
+                        <h4>Baccalauréat Général</h4>
+                        <p>Lycée Maurice Eliot, Épinay-sous-Sénart</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('bac')">En savoir plus...</button>
+                </div>
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2025 - 2027</span>
+                        <h4>BTS SIO SISR</h4>
+                        <p>Lycée Parc de Vilgénis, Massy</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('bts')">En savoir plus...</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="content-section section">
+        <div class="container">
+            <h2 class="section-title">Expériences Professionnelles</h2>
+            <div class="parcours-grid">
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2023 - 2025</span>
+                        <h4>Bénévole</h4>
+                        <p>Épicerie Solidaire Siloé, Boussy-Saint-Antoine</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('siloe')">En savoir plus...</button>
+                </div>
+                <div class="experience-card">
+                    <div>
+                        <span class="date">Juin 2026 (À venir)</span>
+                        <h4>Stagiaire Informatique</h4>
+                        <p>KTO Télévision, Malakoff</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('kto')">En savoir plus...</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="content-section section grey-bg"><h2 class="section-title">Projets</h2></section>
+    <section id="certifications" class="content-section section"><h2 class="section-title">Certifications</h2></section>
+    <section id="veille" class="content-section section grey-bg"><h2 class="section-title">Veille Technologique</h2></section>
+    
+    <section id="contact" class="content-section section">
+        <div class="container">
+            <h2 class="section-title">Comment me contacter</h2>
+            <div class="contact-info">
+                <p>Email : <strong>grace.lombokg@gmail.com</strong></p>
+                <p>LinkedIn : <strong>Grace LOMBO</strong></p>
+            </div>
+            <form class="contact-form">
+                <div class="form-group"><label>Nom :</label><input type="text" name="name" required></div>
+                <div class="form-group"><label>Email :</label><input type="email" name="email" required></div>
+                <div class="form-group"><label>Message :</label><textarea name="message" rows="5" required></textarea></div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <footer><p>© 2026 Grace Lombo - Portfolio SISR</p></footer>
+
+    <script>
+        const content = {
+            bac: { title: "Baccalauréat Général", desc: "Ce cursus a forgé ma culture générale et ma rigueur méthodologique. L'option AMC (Anglais Monde Contemporain) a élargi mon vocabulaire et mon aisance en anglais technique, tandis que la spécialité HGGSP (Histoire-Géographie, Géopolitique et Sciences Politiques) a développé mes capacités d'analyse et de rédaction." },
+            bts: { title: "BTS SIO SISR", desc: "Spécialisation en SISR (Solutions d'Infrastructure, Systèmes et Réseaux), axée sur la cybersécurité et la virtualisation. Cette formation me permet de maîtriser la configuration d'équipements et la sécurisation des infrastructures." },
+            siloe: { title: "Bénévolat Siloé", desc: "Engagement associatif axé sur la gestion logistique et le contact humain. Cette expérience a renforcé mon sens des responsabilités et mon autonomie au sein d'une équipe pour répondre à des besoins concrets." },
+            kto: { title: "Stage KTO Télévision", desc: "Immersion technique pour assurer le support utilisateur et la maintenance du parc. Ce stage m'a permis d'appréhender les contraintes de haute disponibilité d'un réseau de diffusion 24h/24." }
+        };
+
+        function openModal(id) {
+            const modal = document.getElementById('modal');
+            const body = document.getElementById('modal-body');
+            body.innerHTML = `<h3>${content[id].title}</h3><p>${content[id].desc}</p>`;
+            modal.style.display = "block";
+        }
+
+        function closeModal() { document.getElementById('modal').style.display = "none"; }
+        window.onclick = function(event) { if (event.target == document.getElementById('modal')) closeModal(); }
+        
+        window.addEventListener('scroll', () => {
+            let current = "";
+            document.querySelectorAll('section').forEach(section => {
+                if (pageYOffset >= section.offsetTop - 150) current = section.getAttribute('id');
+            });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) link.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
