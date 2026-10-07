@@ -15,10 +15,10 @@
             <li><a href="#accueil" class="nav-link active">Profil</a></li>
             <li><a href="#propos" class="nav-link">À propos</a></li>
             <li><a href="#formations" class="nav-link">Formations</a></li>
-            <li><a href="#experiences" class="nav-link">Expériences Professionnelles</a></li>
+            <li><a href="#experiences" class="nav-link">Expériences</a></li>
             <li><a href="#projets" class="nav-link">Projets</a></li>
             <li><a href="#certifications" class="nav-link">Certifications</a></li>
-            <li><a href="#veille" class="nav-link">Veille Technologique</a></li>
+            <li><a href="#veille" class="nav-link">Veille</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
@@ -29,8 +29,8 @@
             <h2>Étudiante en BTS SIO option SISR</h2>
             <p>Spécialisée en Infrastructures, Systèmes et Réseaux au Lycée Parc de Vilgénis.</p>
             <div class="hero-btns">
-                <a href="CV_LOMBO.pdf" class="btn btn-primary">Télécharger CV</a>
-                <a href="#contact" class="btn btn-secondary">Contact</a>
+                <a href="CV_Grace_Lombo.pdf" target="_blank" class="btn btn-primary">Télécharger mon CV</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
             </div>
         </div>
     </section>
@@ -40,9 +40,9 @@
             <h2 class="section-title">À propos de moi</h2>
             <div class="about-container">
                 <div class="about-text">
-                    <p>Étudiante en <strong>BTS SIO option SISR</strong>, je me spécialise dans l'administration des systèmes et la sécurisation des infrastructures numériques.</p>
-                    <p>Intéressé par l'informatique depuis mon parcours général, j'ai développé une rigueur technique et une capacité d'analyse qui me permettent de progressé.</p>
-                    <p>Mon dynamisme et mes expériences associatives renforcent mon sens du service et ma faculté à travailler en équipe pour mener à bien des projets technologiques.</p>
+                    <p>Actuellement étudiante en deuxième année de <strong>BTS SIO (Services Informatiques aux Organisations)</strong> au Lycée Parc de Vilgénis, je me spécialise dans l'option <strong>SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</strong>.</p>
+                    <p>Passionnée par l'informatique depuis mon parcours général, j'ai développé une solide rigueur technique et une grande capacité d'apprentissage. Mes compétences s'étendent des réseaux (adressage IP, VLAN) aux systèmes (Active Directory, Windows Server 2022, Proxmox, Debian), en passant par la cybersécurité et le scripting.</p>
+                    <p>Mon dynamisme, mon sens de l'organisation et mes expériences associatives renforcent mon sens du service, mon autonomie et ma faculté à travailler en équipe pour mener à bien des projets technologiques.</p>
                 </div>
             </div>
         </div>
@@ -54,19 +54,27 @@
             <div class="parcours-grid">
                 <div class="experience-card">
                     <div>
-                        <span class="date">2022 - 2025</span>
+                        <span class="date">2025 - 2027</span>
+                        <h4>BTS SIO option SISR</h4>
+                        <p>Lycée Parc de Vilgénis, Massy</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('bts')">En savoir plus...</button>
+                </div>
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2024 - 2025</span>
                         <h4>Baccalauréat Général</h4>
                         <p>Lycée Maurice Eliot, Épinay-sous-Sénart</p>
+                        <p>Spécialités : HGGSP et AMC</p>
                     </div>
                     <button class="btn-more" onclick="openModal('bac')">En savoir plus...</button>
                 </div>
                 <div class="experience-card">
                     <div>
-                        <span class="date">2025 - 2027</span>
-                        <h4>BTS SIO SISR</h4>
-                        <p>Lycée Parc de Vilgénis, Massy</p>
+                        <span class="date">2022</span>
+                        <h4>Brevet des collèges</h4>
+                        <p>Collège La Vallée, Épinay-sous-Sénart</p>
                     </div>
-                    <button class="btn-more" onclick="openModal('bts')">En savoir plus...</button>
                 </div>
             </div>
         </div>
@@ -78,34 +86,156 @@
             <div class="parcours-grid">
                 <div class="experience-card">
                     <div>
-                        <span class="date">2023 - 2025</span>
-                        <h4>Bénévole</h4>
-                        <p>Épicerie Solidaire Siloé, Boussy-Saint-Antoine</p>
-                    </div>
-                    <button class="btn-more" onclick="openModal('siloe')">En savoir plus...</button>
-                </div>
-                <div class="experience-card">
-                    <div>
-                        <span class="date">Juin 2026 (À venir)</span>
-                        <h4>Stagiaire Informatique</h4>
+                        <span class="date">Juin 2026 - Juillet 2026</span>
+                        <h4>Stagiaire Administration Systèmes et Réseaux</h4>
                         <p>KTO Télévision, Malakoff</p>
                     </div>
                     <button class="btn-more" onclick="openModal('kto')">En savoir plus...</button>
+                </div>
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2022 - 2025</span>
+                        <h4>Bénévole</h4>
+                        <p>Association Siloé, Boussy-Saint-Antoine</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('siloe')">En savoir plus...</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projets" class="content-section section grey-bg"><h2 class="section-title">Projets</h2></section>
-    <section id="certifications" class="content-section section"><h2 class="section-title">Certifications</h2></section>
-    <section id="veille" class="content-section section grey-bg"><h2 class="section-title">Veille Technologique</h2></section>
-    
+    <section id="projets" class="content-section section grey-bg">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="parcours-grid">
+                <!-- Projet 1 -->
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2026</span>
+                        <h4>Projet MuséoConnect</h4>
+                        <p>Infrastructure & Sécurité</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('museoconnect')">En savoir plus...</button>
+                </div>
+                <!-- Projet 2 -->
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2026</span>
+                        <h4>Déploiement Windows Server 2019</h4>
+                        <p>Services d'infrastructure</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('winserver')">En savoir plus...</button>
+                </div>
+                <!-- Projet 3 -->
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2025 - 2026</span>
+                        <h4>Serveurs Linux (LAMP, GLPI, Prestashop)</h4>
+                        <p>Déploiement de services web et ticketing</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('linux')">En savoir plus...</button>
+                </div>
+                <!-- Projet 4 -->
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2026</span>
+                        <h4>Réseaux Cisco (Packet Tracer)</h4>
+                        <p>Configuration routeur & switch, VLAN</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('cisco')">En savoir plus...</button>
+                </div>
+                 <!-- Projet 5 -->
+                 <div class="experience-card">
+                    <div>
+                        <span class="date">2025</span>
+                        <h4>Virtualisation Docker</h4>
+                        <p>Mise en place et configuration de conteneurs</p>
+                    </div>
+                    <button class="btn-more" onclick="openModal('docker')">En savoir plus...</button>
+                </div>
+            </div>
+            
+            <h3 style="color: var(--primary); margin-top: 40px;">Épreuve E5</h3>
+            <p>Mon parcours m'a permis de développer un portefeuille de compétences professionnelles que je présenterai lors de l'épreuve E5.</p>
+            <a href="8 - EPREUVE ORALE E5 - MODELE DE TABLEAU DE SYNTHESE ANNEXE VI-1 - BTS SIO 2026.pdf" target="_blank" class="btn btn-secondary" style="margin-top: 15px;">Voir mon Tableau de Synthèse E5</a>
+
+        </div>
+    </section>
+
+    <section id="certifications" class="content-section section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="parcours-grid">
+                <div class="experience-card">
+                    <div>
+                        <span class="date">2025 - 2026</span>
+                        <h4>SecNumAcadémie (ANSSI)</h4>
+                        <p>Formation en cybersécurité pour acquérir les bases de la sécurité des systèmes d'information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="veille" class="content-section section grey-bg">
+        <div class="container">
+            <h2 class="section-title">Veille Technologique</h2>
+            
+            <div class="about-container" style="margin-bottom: 30px;">
+                <h3 style="color: var(--primary);">L'Infrastructure et la Sécurité de l'IA dans les Métiers de l'Art</h3>
+                <p><strong>Problématique :</strong> <em>"Comment les infrastructures systèmes et réseaux évoluent-elles pour sécuriser et supporter le déploiement de l'IA générative dans le secteur artistique ?"</em></p>
+                <p>L'objectif de cette veille est d'étudier comment le support technique (serveurs, réseaux, stockage) s'adapte à l'explosion de l'IA dans l'art, tout en intégrant les contraintes de régulation et de protection des données.</p>
+            </div>
+
+            <div class="parcours-grid">
+                <div class="experience-card">
+                    <div>
+                        <span class="date">BPI France</span>
+                        <h4>L'impact de l'IA sur l'art</h4>
+                        <p>Révolution ou évolution ? Analyse des impacts de l'intelligence artificielle sur la création artistique.</p>
+                    </div>
+                    <a href="https://bigmedia.bpifrance.fr/nos-dossiers/limpact-de-lintelligence-artificielle-sur-lart-revolution-ou-evolution" target="_blank" class="btn-more" style="text-align: center; display: block; text-decoration: none;">Lire l'article</a>
+                </div>
+                
+                <div class="experience-card">
+                    <div>
+                        <span class="date">Atelier de Sèvres</span>
+                        <h4>Quel est l'impact de l'IA sur l'art</h4>
+                        <p>Réflexion sur la manière dont l'IA transforme les pratiques artistiques et les infrastructures nécessaires.</p>
+                    </div>
+                    <a href="https://www.atelierdesevres.com/ressources/blog-quel-est-impact-de-intelligence-artificielle-sur-art" target="_blank" class="btn-more" style="text-align: center; display: block; text-decoration: none;">Lire l'article</a>
+                </div>
+
+                <div class="experience-card">
+                    <div>
+                        <span class="date">Démarre ton aventure</span>
+                        <h4>Régulations de l'IA dans le secteur de l'art</h4>
+                        <p>Étude des contraintes juridiques et de la protection des données liées à l'IA dans l'expertise d'art.</p>
+                    </div>
+                    <a href="https://www.demarretonaventure.com/regulations-ia/regulations-de-lia-dans-le-secteur-expertise-dart/" target="_blank" class="btn-more" style="text-align: center; display: block; text-decoration: none;">Lire l'article</a>
+                </div>
+                
+                <div class="experience-card">
+                    <div>
+                        <span class="date">Musée du Louvre</span>
+                        <h4>L'IA au cœur du musée</h4>
+                        <p>Cas concrets d'utilisation de l'IA pour la sécurité publique (cambriolages), la recherche documentaire (Teklia) et la médiation.</p>
+                    </div>
+                    <a href="https://www.louvre.fr/louvreplus/video-912-de-l-utilite-de-l-intelligence-artificielle-dans-la-recherche-un-exemple-d-application-operationnelle-avec-arte-fact" target="_blank" class="btn-more" style="text-align: center; display: block; text-decoration: none;">Voir la ressource</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
     <section id="contact" class="content-section section">
         <div class="container">
             <h2 class="section-title">Comment me contacter</h2>
             <div class="contact-info">
                 <p>Email : <strong>grace.lombokg@gmail.com</strong></p>
-                <p>LinkedIn : <strong>Grace LOMBO</strong></p>
+                <p>Téléphone : <strong>+33 7 69 06 76 33</strong></p>
+                <p>Adresse : <strong>22, Avenue Victor Hugo, Épinay-sous-Sénart</strong></p>
+                <p>LinkedIn : <a href="#" style="color: var(--secondary);">Grace LOMBO</a> (N'hésite pas à mettre le vrai lien ici)</p>
             </div>
             <form class="contact-form">
                 <div class="form-group"><label>Nom :</label><input type="text" name="name" required></div>
@@ -127,16 +257,21 @@
 
     <script>
         const content = {
-            bac: { title: "Baccalauréat Général", desc: "Ce cursus a forgé ma culture générale et ma rigueur méthodologique. L'option AMC (Anglais Monde Contemporain) a élargi mon vocabulaire et mon aisance en anglais technique, tandis que la spécialité HGGSP (Histoire-Géographie, Géopolitique et Sciences Politiques) a développé mes capacités d'analyse et de rédaction." },
-            bts: { title: "BTS SIO SISR", desc: "Spécialisation en SISR (Solutions d'Infrastructure, Systèmes et Réseaux), axée sur la cybersécurité et la virtualisation. Cette formation me permet de maîtriser la configuration d'équipements et la sécurisation des infrastructures." },
-            siloe: { title: "Bénévolat Siloé", desc: "Engagement associatif axé sur la gestion logistique et le contact humain. Cette expérience a renforcé mon sens des responsabilités et mon autonomie au sein d'une équipe pour répondre à des besoins concrets." },
-            kto: { title: "Stage KTO Télévision", desc: "Immersion technique pour assurer le support utilisateur et la maintenance du parc. Ce stage m'a permis d'appréhender les contraintes de haute disponibilité d'un réseau de diffusion 24h/24." }
+            bac: { title: "Baccalauréat Général", desc: "Spécialités Histoire-Géographie, Géopolitique et Sciences Politiques (HGGSP) et Anglais Monde Contemporain (AMC). Ce cursus a forgé ma culture générale, mes capacités d'analyse et mon aisance en anglais technique." },
+            bts: { title: "BTS SIO option SISR", desc: "Spécialisation en Solutions d'Infrastructure, Systèmes et Réseaux, axée sur l'administration réseau, la cybersécurité, le déploiement de serveurs et la virtualisation." },
+            siloe: { title: "Bénévolat Association Siloé", desc: "Accueil, accompagnement des clients, gestion des stocks, tenue de la caisse et travail en équipe. Cette expérience a renforcé mon sens du relationnel et des responsabilités." },
+            kto: { title: "Stage KTO Télévision", desc: "<ul><li>Support & gestion des identités : assistance aux utilisateurs, création de profils, gestion AD.</li><li>Déploiement : masterisation et installation de postes Windows 10/11.</li><li>Systèmes & sauvegarde : virtualisation avec Proxmox (installation de Windows Server 2022).</li><li>Réseaux & sécurité : résolution d'incidents de connectivité, traitement d'alertes phishing.</li><li>Audit et mise à niveau d'un parc de PC portables pour la production vidéo.</li></ul>" },
+            museoconnect: { title: "Projet MuséoConnect", desc: "<strong>Infrastructure :</strong> Analyse du cahier des charges, plan d'adressage VLSM, déploiement de VLANs et configuration du routage inter-VLAN sur équipements Cisco.<br><br><strong>Sécurité & Services :</strong> Configuration sur pare-feu Zyxel et déploiement de machines virtuelles (Linux/Windows) pour héberger un service applicatif de billetterie." },
+            winserver: { title: "Déploiement Windows Server", desc: "Mise en service des rôles DHCP, DNS et Active Directory sous Windows Server 2019. Configuration des sauvegardes, déploiement WDS et gestion des stratégies de groupe (GPO)." },
+            linux: { title: "Services Linux", desc: "Déploiement de machines virtuelles sous Debian pour la mise en place de plusieurs services :<br><ul><li>Un serveur web LAMP</li><li>Le service de billetterie/e-commerce Prestashop</li><li>La solution de gestion de parc et de ticketing GLPI</li></ul>" },
+            cisco: { title: "Réseaux Cisco (Packet Tracer)", desc: "Maîtrise de la configuration d'équipements réseaux (routeurs et commutateurs), gestion du routage et des VLANs via l'outil de simulation Packet Tracer." },
+            docker: { title: "Virtualisation avec Docker", desc: "Mise en place et configuration de conteneurs avec Docker pour isoler et déployer des applications." }
         };
 
         function openModal(id) {
             const modal = document.getElementById('modal');
             const body = document.getElementById('modal-body');
-            body.innerHTML = `<h3>${content[id].title}</h3><p>${content[id].desc}</p>`;
+            body.innerHTML = `<h3 style="color:var(--primary); margin-top:0;">${content[id].title}</h3><p>${content[id].desc}</p>`;
             modal.style.display = "block";
         }
 
